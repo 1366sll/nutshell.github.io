@@ -64,22 +64,24 @@
 	}
 }
 
-#web_bg {
-	  /* 背景图像的地址（url括号里）  */
-	  background: linear-gradient(
-			60deg,
-			rgba(255, 165, 150, 0.5) 5%,
-			rgba(0, 228, 255, 0.35)
-		),
-	  	url(https://img1.imgtp.com/2023/08/19/0zGefEmw.jpg);
-	  /* 背景图像不重复 */
-	  background-repeat: no-repeat;
-	  /* 背景图像大小 */
-	  background-size: 120% 110%;
-	  animation: Gradient2 15s ease infinite !important;
+@media screen and (min-width: 768px){
+	#web_bg {
+		/* 背景图像的地址（url括号里）  */
+		background: linear-gradient(
+				60deg,
+				rgba(255, 165, 150, 0.5) 5%,
+				rgba(0, 228, 255, 0.35)
+			),
+			url(https://www.freeimg.cn/i/2023/12/31/659119e708ed2.jpg);
+		/* 背景图像不重复 */
+		background-repeat: no-repeat;
+		/* 背景图像大小 */
+		background-size: 120% 110%;
+		animation: Gradient2 15s ease infinite !important;
+	}
 }
 
-@media screen and (max-width < 1080px){
+@media screen and (max-width = 768px){
 	#web_bg {
 		/* 背景图像的地址（url括号里）  */
 		background: linear-gradient(
@@ -88,6 +90,7 @@
 			  rgba(0, 228, 255, 0.35)
 		  );
 		/* 背景图像不重复 */
+		background-repeat: no-repeat;
   }
 }
 
